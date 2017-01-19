@@ -1,9 +1,13 @@
-## sprite-brunch
+# sprite-brunch
 Sprite Generator for [brunch](http://brunch.io).
+
 It uses [Spritesmith](https://github.com/Ensighten/spritesmith) and [spritesheet-templates](https://github.com/twolfson/spritesheet-templates) to generate sprites in language agnostic styles.
 
 ## Installation
-If using Less, SASS, etc., this should be ordered before their brunch compilers in package.json so that sprite styles compile before other styles.
+`npm install --save sprite-brunch`
+
+If using Less, SASS, etc., sprite-brunch should be ordered before their brunch compilers in package.json so that sprite styles compile before other styles.
+
 To improve speed, consider an engine such as [canvassmith](https://github.com/twolfson/canvassmith) or [gmsmith](https://github.com/twolfson/gmsmith).
 Check out the [Spritesmith](https://github.com/Ensighten/spritesmith#engines) website for details.
 
@@ -35,7 +39,7 @@ app/assets/images/sprites/backgrounds
 
 For CSS languages/preprocessors, the plugin only generates the variables and the mixins. The mixins have to be called from another stylesheet to be included in your project.
 
-# Less Example
+## Less Example
 
 ```less
 .icon-name {
